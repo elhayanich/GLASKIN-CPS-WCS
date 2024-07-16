@@ -42,9 +42,15 @@ export default function Navbar() {
           </button>
           {isDropdownOpen && (
             <ul className="absolute mt-2 w-48 bg-Softy bg-opacity-50 backdrop-blur-md shadow-lg rounded-lg z-10">
-              <li className="p-2 hover:bg-Bluey">SkinCare</li>
-              <li className="p-2 hover:bg-Bluey">HairCare</li>
-              <li className="p-2 hover:bg-Bluey">BodyCare - soon </li>
+              <li className="p-2 hover:bg-Bluey">
+                <Link to="/skincare">SkinCare</Link>
+              </li>
+              <li className="p-2 hover:bg-Bluey">
+                <Link to="/haircare">HairCare</Link>
+              </li>
+              <li className="p-2 hover:bg-Bluey">
+                <Link to="/bodycare">BodyCare - soon</Link>
+              </li>
             </ul>
           )}
         </div>

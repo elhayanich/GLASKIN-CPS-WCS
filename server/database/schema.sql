@@ -7,10 +7,10 @@ CREATE TABLE category (
 CREATE TABLE product (
     productId INT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
-    image VARCHAR(255),
+    image TEXT,
     description TEXT,
     price DECIMAL(10, 2),
-    url VARCHAR(255),
+    url TEXT,
     categoryId INT,
     FOREIGN KEY (categoryId) REFERENCES Category(categoryId)
 );

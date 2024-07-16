@@ -1,0 +1,183 @@
+[
+    {
+      "productId": 1,
+      "name": "Typology Hydrating Serum 3% Hyaluronic Acid",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.typology.com%2Fproducts%2Facide-hyaluronique&psig=AOvVaw3I5W3iTL8S9rFFTjr0TGxi&ust=1721231124301000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKCK5uDzq4cDFQAAAAAdAAAAABAE",
+      "description": "Intensely hydrating serum with 3% hyaluronic acid. Suitable for all skin types.",
+      "price": 29.99,
+      "url": "https://www.typology.com/en/eu/face-serum/49/hydrating-serum-3-hyaluronic-acid.html",
+      "categoryId": 1
+    },
+    {
+      "productId": 2,
+      "name": "Beauty of Joseon Glow Serum",
+      "image": "https://static.wixstatic.com/media/373c63_45bb6b5b5ef14ca185f1d7ab27914aa2~mv2.jpg/v1/fill/w_522,h_712,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/373c63_45bb6b5b5ef14ca185f1d7ab27914aa2~mv2.jpg",
+      "description": "Brightening and anti-aging serum infused with traditional Korean herbs.",
+      "price": 39.99,
+      "url": "https://beautyofjoseon.com/products/glow-serum",
+      "categoryId": 1
+    },
+    {
+      "productId": 3,
+      "name": "Fenty Beauty HydraVizor",
+      "image": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FS22_REFRESH_HYDRAVIZOR_PDP_MINERAL_FRAGRANCE-FREE_FENTYVERSE.jpg?v=1692710438",
+      "description": "This lightweight sunscreen works overtime to even skin tone, refine pores—and instantly give you some extra bounce while also boosting skin’s moisture barrier. Plus, it’s refillable.",
+      "price": 49.99,
+      "url": "https://fentybeauty.com/en-fr/products/hydra-vizor-fragrance-free-broad-spectrum-mineral-spf-30-sunscreen-moisturizer?variant=41630283759661",
+      "categoryId": 1
+    },
+    {
+      "productId": 4,
+      "name": "Caudalie Vinoperfect Radiance Serum",
+      "image": "https://www.pharmashopi.com/images/imagecache/310x310/png/Vinoperfect-serum-eclat-anti-taches-Caudalie-flacon-comp.png",
+      "description": "Anti-dark spot serum that boosts radiance and evens out skin tone.",
+      "price": 34.99,
+      "url": "https://us.caudalie.com/vinoperfect-radiance-serum-3002.html",
+      "categoryId": 1
+    },
+    {
+      "productId": 5,
+      "name": "Drunk Elephant T.L.C. Framboos Glycolic Night Serum",
+      "image": "https://www.drunkelephant.ca/on/demandware.static/-/Sites-itemmaster_drunkelephant/default/dw8f7e6467/products/images/Skincare/Serum/812343032781-T.L.C._Framboos/SmoothieProductImages/TLCFramboos.png",
+      "description": "A powerful AHA/BHA night serum that resurfaces skin for smoother, more radiant complexion.",
+      "price": 59.99,
+      "url": "https://www.drunkelephant.com/products/tlc-framboos-glycolic-night-serum",
+      "categoryId": 1
+    },
+    {
+      "productId": 6,
+      "name": "Olaplex No. 3 Hair Perfector",
+      "image": "https://atelierduport.com/wp-content/uploads/2023/10/OLAPLEX-N%C2%B03-RECTO.png",
+      "description": "A treatment that reduces breakage and visibly strengthens hair, improving its look and feel.",
+      "price": 24.99,
+      "url": "https://olaplex.com/products/no-3-hair-perfector",
+      "categoryId": 2
+    },
+    {
+      "productId": 7,
+      "name": "Typology Purifying Serum 0.2% Salicylic Acid",
+      "image": "https://media.typology.com/storyblok/1600x1600/b3f7599f1b/l35_packshot1_web_1600x1600.png?twic=v1/quality=70/contain=490x612",
+      "description": "Purifying serum with 0.2% salicylic acid. Helps to unclog pores and reduce imperfections.",
+      "price": 27.99,
+      "url": "https://www.typology.com/en/eu/face-serum/54/purifying-serum-02-salicylic-acid.html",
+      "categoryId": 1
+    },
+    {
+      "productId": 8,
+      "name": "Wow Skin Science Apple Cider Vinegar Shampoo",
+      "image": "https://onehut.com/wow/v1/images/s4-row-left-img1.png",
+      "description": "Gentle and natural shampoo infused with apple cider vinegar for healthy scalp and hair.",
+      "price": 19.99,
+      "url": "https://www.buywow.com/products/wow-skin-science-apple-cider-vinegar-shampoo",
+      "categoryId": 2
+    },
+    {
+      "productId": 9,
+      "name": "Fino Premium Touch Hair Mask",
+      "image": "https://mythaibeauty.com/wp-content/uploads/2024/06/tempImageNuFsGF.jpg",
+      "description": "Intensive hair treatment mask for smooth, shiny, and manageable hair.",
+      "price": 29.99,
+      "url": "https://www.amazon.com/Fino-Premium-Touch-Hair-Mask/dp/B004F3YV8U",
+      "categoryId": 2
+    },
+    {
+      "productId": 10,
+      "name": "Typology Anti-Aging Serum 10% Vitamin C",
+      "image": "https://skinsort.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOFA1RGc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--bf48be690ff70e2c915221a5a413f1901ca4cff3/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBPZ2wzWldKd09oUnlaWE5wZW1WZmRHOWZiR2x0YVhSYkIya0M5QUZwQXZRQk9ncHpZWFpsY25zR09neHhkV0ZzYVhSNWFVcz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--b72940ad2f828f564888ecdc27fe23650eed6efb/out.png",
+      "description": "Anti-aging serum with 10% vitamin C. Helps to brighten and firm the skin.",
+      "price": 31.99,
+      "url": "https://www.typology.com/en/eu/face-serum/47/anti-aging-serum-10-vitamin-c.html",
+      "categoryId": 1
+    },
+    {
+      "productId": 11,
+      "name": "Beauty of Joseon Revitalize Sleeping Mask",
+      "image": "https://sentisenti.com/cdn/shop/files/Beauty-of-Joseon-Ground-Rice-and-Honey-Glow-Mask-sentisenti.png?v=1716185288&width=1000",
+      "description": "Revitalizing sleeping mask that hydrates and nourishes skin overnight.",
+      "price": 37.99,
+      "url": "https://beautyofjoseon.com/products/revitalize-sleeping-mask",
+      "categoryId": 1
+    },
+    {
+      "productId": 12,
+      "name": "Caudalie Premier Cru The Cream",
+      "image": "https://assets.caudalie.com/f/286013/345x434/d220a91d00/produits_cultes_pc.png/m/filters:quality(95)",
+      "description": "Luxurious anti-aging cream that firms, lifts, and brightens the skin.",
+      "price": 42.99,
+      "url": "https://us.caudalie.com/premier-cru-the-cream-2948.html",
+      "categoryId": 1
+    },
+    {
+      "productId": 13,
+      "name": "Drunk Elephant C-Firma Day Serum",
+      "image": "https://valcosmetics.mx/cdn/shop/files/Drunk-Elephant-C-Firma-Day-Serum-Nueva-Presentacion.jpg?v=1707795228",
+      "description": "Potent vitamin C serum that visibly firms and brightens the skin.",
+      "price": 64.99,
+      "url": "https://www.drunkelephant.com/products/c-firma-day-serum",
+      "categoryId": 1
+    },
+    {
+      "productId": 14,
+      "name": "Olaplex No. 6 Bond Smoother",
+      "image": "https://www.my-origines.com/dw/image/v2/BJRD_PRD/on/demandware.static/-/Sites-base-master/default/dw504af781/images/66W92030_S2.jpg?sw=1500&sh=1500&sm=fit",
+      "description": "Leave-in treatment that eliminates frizz, hydrates, and protects all hair types.",
+      "price": 27.99,
+      "url": "https://olaplex.com/products/no-6-bond-smoother",
+      "categoryId": 2
+    },
+    {
+      "productId": 15,
+      "name": "Typology Hydrating Mask 2% Hyaluronic Acid",
+      "image": "https://violethollow.com/wp-content/uploads/2021/08/Typology_Paris_Skincare_Lowres_V2-759x1024.jpg",
+      "description": "Intensely hydrating mask with 2% hyaluronic acid for plump and moisturized skin.",
+      "price": 33.99,
+      "url": "https://www.typology.com/en/eu/face-mask/22/hydrating-mask-2-hyaluronic-acid.html",
+      "categoryId": 1
+    },
+    {
+      "productId": 16,
+      "name": "Fenty Beauty Gloss Bomb Universal Lip Luminizer",
+      "image": "fenty_beauty_lip_luminizer.jpg",
+      "description": "High-shine lip gloss that delivers explosive shine in a universal rose nude shade.",
+      "price": 47.99,
+      "url": "https://www.fentybeauty.com/gloss-bomb/lip-luminizer/FB30003.html",
+      "categoryId": 1
+    },
+    {
+      "productId": 17,
+      "name": "Wow Skin Science Onion Hair Oil",
+      "image": "https://m.media-amazon.com/images/I/61rVF8I9VML._AC_UF1000,1000_QL80_.jpg",
+      "description": "Hair oil enriched with onion black seed oil that helps reduce hair fall and boost shine.",
+      "price": 21.99,
+      "url": "https://www.buywow.com/products/onion-hair-oil",
+      "categoryId": 2
+    },
+    {
+      "productId": 18,
+      "name": "Fino Premium Touch Hair Serum",
+      "image": "https://www.takaski.com/wp-content/uploads/2023/12/Shiseido-Fino-Premium-Touch-Penetration-Serum-Hair-Oil-Made-in-Japan2.jpg",
+      "description": "Hair serum that repairs split ends and adds shine without weighing hair down.",
+      "price": 32.99,
+      "url": "https://www.amazon.com/Fino-Premium-Touch-Hair-Serum/dp/B004F3YV8U",
+      "categoryId": 2
+    },
+    {
+      "productId": 19,
+      "name": "Typology Radiance Serum 5% Niacinamide",
+      "image": "https://media.typology.com/storyblok/1600x1600/a45beb2679/plantes_1001_page_produit2.jpg?twic=v1/quality=70",
+      "description": "Serum with 5% niacinamide to refine skin texture and boost radiance.",
+      "price": 35.99,
+      "url": "https://www.typology.com/en/eu/face-serum/53/radiance-serum-5-niacinamide.html",
+      "categoryId": 1
+    },
+    {
+      "productId": 20,
+      "name": "Drunk Elephant Protini Polypeptide Cream",
+      "image": "https://www.drunkelephant.fr/dw/image/v2/BCMQ_PRD/on/demandware.static/-/Sites-itemmaster_drunkelephant/default/dwf86d74b0/products/images/Skincare/Moisturizer/812343032422/Protini-Big-Stylized-AddtoCart-Image1.png?sw=594&sh=594&sm=fit",
+      "description": "Lightweight moisturizer with peptides for visibly firmer, younger-looking skin.",
+      "price": 54.99,
+      "url": "https://www.drunkelephant.com/products/protini-polypeptide-cream",
+      "categoryId": 1
+    }
+  ]
+  
