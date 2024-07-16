@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-familly: "ArchivoBlack";
+  font-style: "normal";
+  font-weight: "400";
+  src: url("./assets/fonts//ArchivoBlack-Regular.ttf");
+}
+
+@font-face {
+  font-familly: " Inter";
+  font-style: "normal";
+  font-weight: "400";
+  src: url("./assets/fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-familly: "Eduauvicwanth";
+  font-style: "normal";
+  font-weight: "400";
+  src: url("./assets/fonts/EduAUVICWANTHand-Regular.ttf");
+}
+
+body {
+  background-color: #e9e1d6;
+}
+
+.category-card {
+  width: 400px;
+  height: 600px;
+  border: 1px solid #003049;
+  background-color: #fff0f3;
+  padding: 20px;
+  margin-right: 20px;
+  text-align: center;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+}
