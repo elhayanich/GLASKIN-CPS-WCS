@@ -7,9 +7,15 @@ module.exports = {
     extend: {
       colors: {
         Pinky: "#EE60A4",
-        Creamy: "#E9E1D6",
+        Softy:"#fff0f3",
+        Creamy: "#fbfbf5",
         Dark: "#003049",
         Bluey: "#bde0fe",
+      },
+      fontFamily: {
+        title: ['"ArchivoBlack"'],
+        main: ['"Inter"'],
+        quote: ['"Eduauvicwanth"'],
       },
     },
   },
