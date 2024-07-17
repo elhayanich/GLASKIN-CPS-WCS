@@ -1,14 +1,11 @@
 const tables = require("../../database/tables");
 
 const create = async (req, res, next) => {
-  const skinType
-  
+  const skinproduct
    = req.body;
   try {
-    const insertId = await tables.skinType
-    
-    .create(skinType
-        
+    const insertId = await tables.skinproduct
+    .create(skinproduct
         
     );
     res.status(201).json({ insertId });
@@ -19,13 +16,10 @@ const create = async (req, res, next) => {
 
 const readAll = async (req, res, next) => {
   try {
-    const skinType
-    
-     = await tables.skinType
-     
+    const skinproduct
+     = await tables.skinproduct
     .readAll();
-    res.json(skinType
-        
+    res.json(skinproduct
         
     );
   } catch (err) {
@@ -35,18 +29,14 @@ const readAll = async (req, res, next) => {
 
 const readOneById = async (req, res, next) => {
   try {
-    const skinType
-    
-     = await tables.skinType
-     
+    const skinproduct
+     = await tables.skinproduct
     .readOneById(req.params.id);
-    if (skinType
-        
+    if (skinproduct
          == null) {
       res.sendStatus(404);
     } else {
-      res.json(skinType
-        
+      res.json(skinproduct
         
       );
     }
@@ -56,14 +46,11 @@ const readOneById = async (req, res, next) => {
 };
 
 const update = async (req, res, next) => {
-  const skinType
-  
+  const skinproduct
    = req.body;
   try {
-    const edited = await tables.skinType
-    
-    .update(req.params.id, skinType
-        
+    const edited = await tables.skinproduct
+    .update(req.params.id, skinproduct
         
     );
     if (edited) {
@@ -78,8 +65,7 @@ const update = async (req, res, next) => {
 
 const destroy = async (req, res, next) => {
   try {
-    const destroyed = await tables.skinType
-    
+    const destroyed = await tables.skinproduct
     .destroy(req.params.id);
     if (destroyed) {
       res.sendStatus(204);

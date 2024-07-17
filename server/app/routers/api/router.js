@@ -22,36 +22,27 @@ const favoriteRouter = require("./favorite/router");
 
 router.use("/favorite", favoriteRouter);
 
-/* *******************CATEGORY********************************** */
-
-const categoryRouter = require("./category/router");
-
-router.use("/category", categoryRouter);
-
-/* ********************PRODUCT********************************** */
-
-const productRouter = require("./product/router");
-
-router.use("/product", productRouter);
-
 /* **********************TIPS********************************** */
 
 const tipsRouter = require("./tips/router");
 
 router.use("/tips", tipsRouter);
+/* **********************SKINPRODUCT********************************** */
+
+const skinproductRouter = require("./skinproduct/router");
+
+router.use("/skinproduct", skinproductRouter);
+/* **********************HAIRPRODUCT********************************** */
+
+const hairproductRouter = require("./hairproduct/router");
+
+router.use("/hairproduct", hairproductRouter);
 
 
-/* *********************SKINTYPE********************************** */
 
-const skintypeRouter = require("./skinType/router");
 
-router.use("/skintype", skintypeRouter);
 
-/* **********************HAIRTYPE********************************** */
 
-const hairtypeRouter = require("./hairType/router");
-
-router.use("/hairtype", hairtypeRouter);
 
 
 module.exports = router;

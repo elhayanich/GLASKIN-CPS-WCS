@@ -13,7 +13,7 @@ const {
   readOneById,
   update,
   destroy,
-} = require("../../../controllers/productActions");
+} = require("../../../controllers/hairproductActions");
 
 router.post("/", create);
 router.get("/", readAll);

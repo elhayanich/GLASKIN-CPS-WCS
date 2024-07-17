@@ -1,11 +1,11 @@
 const tables = require("../../database/tables");
 
 const create = async (req, res, next) => {
-  const hairType
+  const hairproduct
    = req.body;
   try {
-    const insertId = await tables.hairType
-    .create(hairType
+    const insertId = await tables.hairproduct
+    .create(hairproduct
         
     );
     res.status(201).json({ insertId });
@@ -16,10 +16,10 @@ const create = async (req, res, next) => {
 
 const readAll = async (req, res, next) => {
   try {
-    const hairType
-     = await tables.hairType
+    const hairproduct
+     = await tables.hairproduct
     .readAll();
-    res.json(hairType
+    res.json(hairproduct
         
     );
   } catch (err) {
@@ -29,14 +29,14 @@ const readAll = async (req, res, next) => {
 
 const readOneById = async (req, res, next) => {
   try {
-    const hairType
-     = await tables.hairType
+    const hairproduct
+     = await tables.hairproduct
     .readOneById(req.params.id);
-    if (hairType
+    if (hairproduct
          == null) {
       res.sendStatus(404);
     } else {
-      res.json(hairType
+      res.json(hairproduct
         
       );
     }
@@ -46,11 +46,11 @@ const readOneById = async (req, res, next) => {
 };
 
 const update = async (req, res, next) => {
-  const hairType
+  const hairproduct
    = req.body;
   try {
-    const edited = await tables.hairType
-    .update(req.params.id, hairType
+    const edited = await tables.hairproduct
+    .update(req.params.id, hairproduct
         
     );
     if (edited) {
@@ -65,7 +65,7 @@ const update = async (req, res, next) => {
 
 const destroy = async (req, res, next) => {
   try {
-    const destroyed = await tables.hairType
+    const destroyed = await tables.hairproduct
     .destroy(req.params.id);
     if (destroyed) {
       res.sendStatus(204);

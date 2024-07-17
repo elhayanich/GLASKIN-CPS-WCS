@@ -1,7 +1,11 @@
 // Import the repository modules responsible for handling data operations on the tables
 const ItemRepository = require("./models/ItemRepository");
-const CategoryRepository = require("./models/CategoryRepository");
-const ProductRepository = require("./models/ProductRepository")
+const SkinproductRepository = require ("./models/SkinproductRepository");
+const HairproductRepository = require ("./models/HairproductRepository");
+const TipsRepository = require("./models/TipsRepository");
+const UserRepository = require("./models/UserRepository");
+const FavoriteRepository = require("./models/FavoriteRepository");
+
 
 // Create an empty object to hold data repositories for different tables
 const tables = {};
@@ -12,9 +16,11 @@ const tables = {};
 
 // Register each repository as data access point for its table
 tables.item = new ItemRepository();
-tables.category= new CategoryRepository();
-tables.product= new ProductRepository();
-
+tables.skinproduct= new SkinproductRepository();
+tables.hairproduct= new HairproductRepository();
+tables.tips= new TipsRepository();
+tables.user= new UserRepository();
+tables.favorite= new FavoriteRepository();
 /* ************************************************************************* */
 
 // Use a Proxy to customize error messages when trying to access a non-existing table

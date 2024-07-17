@@ -1,57 +1,30 @@
-
-CREATE TABLE category (
-    categoryId INT PRIMARY KEY,
-    categoryName VARCHAR(255) NOT NULL
-);
-
-CREATE TABLE product (
-    productId INT PRIMARY KEY,
+CREATE TABLE skinproduct (
+    skinproductId INT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     image TEXT,
     description TEXT,
     price DECIMAL(10, 2),
     url TEXT,
-    categoryId INT,
-    FOREIGN KEY (categoryId) REFERENCES Category(categoryId)
+    skintype TEXT,
+    skinconcern TEXT
 );
 
-
-CREATE TABLE skinType (
-    skintypeId INT PRIMARY KEY,
-    skintypeName VARCHAR(255) NOT NULL
+CREATE TABLE hairproduct (
+    hairproductId INT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    image TEXT,
+    description TEXT,
+    price DECIMAL(10, 2),
+    url TEXT,
+    hairtype TEXT,
+    hairconcern TEXT
 );
-
-
-CREATE TABLE hairType (
-    hairtypeId INT PRIMARY KEY,
-    hairtypeName VARCHAR(255) NOT NULL
-);
-
-
-CREATE TABLE product_skinType (
-    productId INT,
-    skintypeId INT,
-    PRIMARY KEY (productId, skintypeId),
-    FOREIGN KEY (productId) REFERENCES Product(productId),
-    FOREIGN KEY (skintypeId) REFERENCES SkinType(skintypeId)
-);
-
---
-CREATE TABLE product_hairType (
-    productId INT,
-    hairtypeId INT,
-    PRIMARY KEY (productId, hairtypeId),
-    FOREIGN KEY (productId) REFERENCES Product(productId),
-    FOREIGN KEY (hairtypeId) REFERENCES HairType(hairtypeId)
-);
-
 
 CREATE TABLE tips (
     tipsId INT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
     content TEXT
 );
-
 
 CREATE TABLE user (
     userId INT PRIMARY KEY,
@@ -60,13 +33,14 @@ CREATE TABLE user (
     password VARCHAR(255) NOT NULL
 );
 
-
 CREATE TABLE favorite (
     favoriteId INT PRIMARY KEY,
     userId INT,
-    productId INT,
+    skinproductId INT,
+    hairproductId INT,
     tipsId INT,
-    FOREIGN KEY (userId) REFERENCES User(userId),
-    FOREIGN KEY (productId) REFERENCES Product(productId),
-    FOREIGN KEY (tipsId) REFERENCES Tips(tipsId)
+    FOREIGN KEY (userId) REFERENCES user(userId),
+    FOREIGN KEY (skinproductId) REFERENCES skinproduct(skinproductId),
+    FOREIGN KEY (hairproductId) REFERENCES hairproduct(hairproductId),
+    FOREIGN KEY (tipsId) REFERENCES tips(tipsId)
 );

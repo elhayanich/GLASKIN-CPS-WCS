@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import  { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logobw from '../assets/images/logobw.png';
 import loginIcon from '../assets/images/login.png';
@@ -54,7 +54,7 @@ export default function Navbar() {
             </ul>
           )}
         </div>
-        <Link to="/blog" className="hover:text-Bluey">Blog</Link>
+        <Link to="/tips" className="hover:text-Bluey">Tips</Link>
         <Link to="/contact" className="hover:text-Bluey">Contact</Link>
       </div>
       <div className="transform scale-125 flex items-center">
@@ -63,9 +63,9 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="flex items-center space-x-4 mt-4 lg:mt-0 relative">
-        <button type="button" className="bg-Dark text-Softy px-4 py-2 rounded-lg">
+        <Link to="/quiz" className="bg-Dark text-Softy px-4 py-2 rounded-lg">
           Take the Quiz
-        </button>
+        </Link>
         <div className="relative">
           <button type="button" className="flex items-center" onClick={toggleLoginDropdown}>
             <img src={loginIcon} alt="Login" className="h-6 w-6 lg:h-8 lg:w-8 mr-1 ml-6" />

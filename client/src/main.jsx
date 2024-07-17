@@ -8,6 +8,8 @@ import App from "./App";
 import HomePage from "./pages/HomePage";
 import SkincarePage from "./pages/SkincarePage";
 import HaircarePage from "./pages/HaircarePage";
+import SkincareDetailPage from "./pages/skincareDetailPage";
+import QuizPage from "./pages/QuizPage";
 
 
 const router = createBrowserRouter([
@@ -23,9 +25,18 @@ const router = createBrowserRouter([
         element: <SkincarePage/>,
       },
       {
+        path: "/skincare/:id",
+        element: <SkincareDetailPage />,
+      },
+      {
         path: "/haircare",
         element: <HaircarePage/>,
       },
+      {
+        path: "/quiz",
+        element: <QuizPage/>,
+      },
+      
       
     ],
   },

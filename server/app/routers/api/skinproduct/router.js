@@ -13,7 +13,7 @@ const {
   readOneById,
   update,
   destroy,
-} = require("../../../controllers/skinTypeActions");
+} = require("../../../controllers/skinproductActions");
 
 router.post("/", create);
 router.get("/", readAll);

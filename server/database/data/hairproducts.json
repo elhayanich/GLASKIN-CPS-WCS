@@ -1,0 +1,103 @@
+[
+    {
+      "hairproductId": 1,
+      "name": "Olaplex No.3 Hair Perfector",
+      "image": "placeholder_image_url",
+      "description": "A treatment that strengthens hair and reduces breakage, suitable for all hair types.",
+      "price": 28.00,
+      "url": "https://olaplex.com/products/olaplex-no-3-hair-perfector",
+      "hairtype": "All",
+      "hairconcern": "Hair strength"
+    },
+    {
+      "hairproductId": 2,
+      "name": "Kérastase Resistance Bain Force Architecte Shampoo",
+      "image": "placeholder_image_url",
+      "description": "Reconstructing shampoo for brittle, damaged hair. Strengthens and revitalizes hair fibers.",
+      "price": 35.00,
+      "url": "https://www.kerastase-usa.com/collections/resistance/bain-force-architecte-shampoo.html",
+      "hairtype": "Damaged",
+      "hairconcern": "Repair"
+    },
+    {
+      "hairproductId": 3,
+      "name": "Shiseido Fino Premium Touch Hair Mask",
+      "image": "placeholder_image_url",
+      "description": "Intensive hair mask that deeply moisturizes and repairs damaged hair.",
+      "price": 16.00,
+      "url": "https://www.shiseido.com/fino-premium-touch-hair-mask-0729238132555.html",
+      "hairtype": "Dry",
+      "hairconcern": "Moisture"
+    },
+    {
+      "hairproductId": 4,
+      "name": "Olaplex No.4 Bond Maintenance Shampoo",
+      "image": "placeholder_image_url",
+      "description": "A restorative shampoo that repairs and protects hair bonds for healthy, shiny hair.",
+      "price": 28.00,
+      "url": "https://olaplex.com/products/olaplex-no-4-bond-maintenance-shampoo",
+      "hairtype": "Color-treated",
+      "hairconcern": "Color protection"
+    },
+    {
+      "hairproductId": 5,
+      "name": "Kérastase Discipline Fluidissime Anti-Frizz Spray",
+      "image": "placeholder_image_url",
+      "description": "Anti-frizz spray that provides shine and control while protecting against humidity.",
+      "price": 45.00,
+      "url": "https://www.kerastase-usa.com/collections/discipline/fluidissime-anti-frizz-spray.html",
+      "hairtype": "Frizzy",
+      "hairconcern": "Frizz control"
+    },
+    {
+      "hairproductId": 6,
+      "name": "Shiseido Tsubaki Premium Repair Hair Mask",
+      "image": "placeholder_image_url",
+      "description": "Repairing hair mask enriched with tsubaki oil to nourish and strengthen hair.",
+      "price": 20.00,
+      "url": "https://www.shiseido.com/tsubaki-premium-repair-hair-mask-0729238147467.html",
+      "hairtype": "Brittle",
+      "hairconcern": "Strength"
+    },
+    {
+      "hairproductId": 7,
+      "name": "Olaplex No.5 Bond Maintenance Conditioner",
+      "image": "placeholder_image_url",
+      "description": "A conditioner that hydrates and repairs hair, leaving it strong, smooth, and shiny.",
+      "price": 28.00,
+      "url": "https://olaplex.com/products/olaplex-no-5-bond-maintenance-conditioner",
+      "hairtype": "Fine",
+      "hairconcern": "Volume"
+    },
+    {
+      "hairproductId": 8,
+      "name": "Kérastase Nutritive Nectar Thermique Heat Protector",
+      "image": "placeholder_image_url",
+      "description": "Heat-activated leave-in treatment for dry hair. Nourishes, protects, and adds shine.",
+      "price": 39.00,
+      "url": "https://www.kerastase-usa.com/collections/nutritive/nutritive-nectar-thermique-heat-protector.html",
+      "hairtype": "Thick",
+      "hairconcern": "Heat protection"
+    },
+    {
+      "hairproductId": 9,
+      "name": "Shiseido Super Mild Hair Treatment",
+      "image": "placeholder_image_url",
+      "description": "Gentle hair treatment that conditions and detangles, suitable for sensitive scalps.",
+      "price": 12.00,
+      "url": "https://www.shiseido.com/super-mild-hair-treatment-0729238110402.html",
+      "hairtype": "Sensitive",
+      "hairconcern": "Gentle care"
+    },
+    {
+      "hairproductId": 10,
+      "name": "Fino Premium Touch Hair Treatment Essence",
+      "image": "placeholder_image_url",
+      "description": "Leave-in hair treatment essence that moisturizes and smoothens hair for a silky finish.",
+      "price": 18.00,
+      "url": "https://www.amazon.com/Fino-Premium-Touch-Essence-230g/dp/B01N7IZPO1",
+      "hairtype": "Thin",
+      "hairconcern": "Thickness"
+    }
+  ]
+  
