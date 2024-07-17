@@ -14,35 +14,19 @@ class UserRepository extends AbstractRepository {
     return result.insertId;
   }
 
+  async readAll() {
+    const [rows] = await this.database.query(
+      `SELECT userId, username, email FROM ${this.table}`
+    );
+    return rows;
+  }
+
   async readOneById(id) {
     const [rows] = await this.database.query(
       `SELECT userId, username, email FROM ${this.table} WHERE userId = ?`,
       [id]
     );
     return rows[0];
-  }
-
-  async readByEmail(email) {
-    const [rows] = await this.database.query(
-      `SELECT userId, username, email FROM ${this.table} WHERE email = ?`,
-      [email]
-    );
-    return rows[0];
-  }
-
-  async readByUsername(username) {
-    const [rows] = await this.database.query(
-      `SELECT userId, username, email FROM ${this.table} WHERE username = ?`,
-      [username]
-    );
-    return rows[0];
-  }
-
-  async readAll() {
-    const [rows] = await this.database.query(
-      `SELECT userId, username, email FROM ${this.table}`
-    );
-    return rows;
   }
 
   async update(id, user) {
@@ -61,6 +45,15 @@ class UserRepository extends AbstractRepository {
     );
     return result.affectedRows > 0;
   }
+
+  async findUserByEmail(email) {
+    const [result] = await this.database.query(
+      `SELECT username, password FROM ${this.table} WHERE email = ?`,
+      [email]
+    );
+    return result; 
+  }
 }
 
 module.exports = UserRepository;
+

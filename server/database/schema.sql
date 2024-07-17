@@ -27,7 +27,7 @@ CREATE TABLE tips (
 );
 
 CREATE TABLE user (
-    userId INT PRIMARY KEY,
+    userId INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
     username VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL
@@ -35,7 +35,7 @@ CREATE TABLE user (
 
 CREATE TABLE favorite (
     favoriteId INT PRIMARY KEY,
-    userId INT,
+    userId  INT UNSIGNED NOT NULL,
     skinproductId INT,
     hairproductId INT,
     tipsId INT,

@@ -1,11 +1,14 @@
-import  { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { Link, useNavigate, useOutletContext } from 'react-router-dom';
+import fetchlogout from '../lib/logout'; 
 import logobw from '../assets/images/logobw.png';
 import loginIcon from '../assets/images/login.png';
 
 export default function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isLoginDropdownOpen, setIsLoginDropdownOpen] = useState(false);
+  const { currentUser, setCurrentUser } = useOutletContext();
+  const navigate = useNavigate();
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -13,6 +16,14 @@ export default function Navbar() {
 
   const toggleLoginDropdown = () => {
     setIsLoginDropdownOpen(!isLoginDropdownOpen);
+  };
+
+  const handleLogout = async () => {
+    const user = await fetchlogout();
+    if (!user) {
+      setCurrentUser(null);
+      navigate('/login');
+    }
   };
 
   return (
@@ -66,35 +77,43 @@ export default function Navbar() {
         <Link to="/quiz" className="bg-Dark text-Softy px-4 py-2 rounded-lg">
           Take the Quiz
         </Link>
-        <div className="relative">
-          <button type="button" className="flex items-center" onClick={toggleLoginDropdown}>
-            <img src={loginIcon} alt="Login" className="h-6 w-6 lg:h-8 lg:w-8 mr-1 ml-6" />
-            <svg
-              className="ml-1 w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </button>
-          {isLoginDropdownOpen && (
-            <ul className="absolute mt-2 right-0 w-48 bg-Softy bg-opacity-50 backdrop-blur-md shadow-lg rounded-lg z-10">
-              <li className="p-2 hover:bg-Bluey">
-                <Link to="/register">Register</Link>
-              </li>
-              <li className="p-2 hover:bg-Bluey">
-                <Link to="/login">Log In</Link>
-              </li>
-            </ul>
-          )}
-        </div>
+        {currentUser ? (
+          <div className="relative">
+            <button type="button" onClick={handleLogout} className="flex items-center bg-Dark text-Softy px-4 py-2 rounded-lg">
+              Logout
+            </button>
+          </div>
+        ) : (
+          <div className="relative">
+            <button type="button" className="flex items-center" onClick={toggleLoginDropdown}>
+              <img src={loginIcon} alt="Login" className="h-6 w-6 lg:h-8 lg:w-8 mr-1 ml-6" />
+              <svg
+                className="ml-1 w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            {isLoginDropdownOpen && (
+              <ul className="absolute mt-2 right-0 w-48 bg-Softy bg-opacity-50 backdrop-blur-md shadow-lg rounded-lg z-10">
+                <li className="p-2 hover:bg-Bluey">
+                  <Link to="/register">Register</Link>
+                </li>
+                <li className="p-2 hover:bg-Bluey">
+                  <Link to="/login">Log In</Link>
+                </li>
+              </ul>
+            )}
+          </div>
+        )}
       </div>
     </nav>
   );

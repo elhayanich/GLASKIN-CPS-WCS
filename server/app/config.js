@@ -4,6 +4,10 @@ const express = require("express");
 
 const app = express();
 
+const cookieParser = require("cookie-parser");
+
+app.use(cookieParser());
+
 // Configure it
 
 /* ************************************************************************* */
@@ -32,9 +36,8 @@ app.use(
   cors({
     origin: [
       process.env.CLIENT_URL, // keep this one, after checking the value in `server/.env`
-      "http://mysite.com",
-      "http://another-domain.com",
-    ]
+    ],
+    credentials: true, // Allow Express to read credentials
   })
 );
 

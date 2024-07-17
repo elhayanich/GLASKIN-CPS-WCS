@@ -10,6 +10,7 @@ const itemsRouter = require("./items/router");
 
 router.use("/items", itemsRouter);
 
+
 /* ********************USER********************************** */
 
 const userRouter = require("./user/router");
@@ -38,8 +39,10 @@ const hairproductRouter = require("./hairproduct/router");
 
 router.use("/hairproduct", hairproductRouter);
 
+/* **********************AUTH********************************** */
+const authentificationRouter = require("./auth/router");
 
-
+router.use("/auth", authentificationRouter);
 
 
 
