@@ -19,7 +19,7 @@ export default function Skincare() {
         const data = await response.json();
         setSkincareProducts(data);
 
-        // Extract unique skin types and concerns from the data for filtering
+        
         const skintypes = [...new Set(data.map(product => product.skintype))].filter(skintype => skintype).map((skintype, index) => ({ id: index, label: skintype }));
         const skinconcerns = [...new Set(data.map(product => product.skinconcern))].map((skinconcern, index) => ({ id: index, label: skinconcern }));
 
@@ -57,7 +57,7 @@ export default function Skincare() {
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold text-center mb-8">Skincare Products</h1>
 
-        {/* Filter dropdowns */}
+        
         <div className="flex flex-wrap gap-10 mb-8">
           <div>
             <label htmlFor="skintypeFilter" className="block text-Dark text-sm">Filter by Skin Type:</label>
@@ -89,7 +89,7 @@ export default function Skincare() {
           </div>
         </div>
 
-        {/* Display filtered products */}
+ 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skincareProducts.filter(filterProducts).map(product => (
             <div key={product.skinproductId} className="bg-Softy bg-opacity-40 backdrop-blur-md rounded-lg shadow-md p-4">

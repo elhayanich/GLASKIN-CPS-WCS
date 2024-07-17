@@ -10,7 +10,7 @@ export default function HomePage() {
       <Navbar />
       <div className="container mx-auto px-4 py-8 md:py-16">
         <div className="flex items-center justify-center">
-          <img src={logo} alt="Logo" className="h-64 w-64 mr-4 mb-4 md:mb-0" /> {/* Taille fixe h-64 w-64 */}
+          <img src={logo} alt="Logo" className="h-64 w-64 mr-4 mb-4 md:mb-0" /> 
           <div>
             <p className="font-quote text-Dark text-4xl font-bold mb-4">
               Glow Beyond Limits : Embrace the Glaskin experience ! 💞
@@ -27,7 +27,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Components added just under the text section */}
+      
         <div className="flex justify-center mt-8">
           <SkincareCat />
           <HaircareCat />

@@ -1,11 +1,10 @@
-// src/pages/SkincareDetailPage.js
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
 export default function SkincareDetailPage ()  {
-  const { id } = useParams(); // Get the id from the URL
+  const { id } = useParams();
 
-  // Fetch product details based on id (this is just an example)
+ 
   const [product, setProduct] = React.useState(null);
 
   React.useEffect(() => {
