@@ -6,7 +6,7 @@
       "description": "Intensely hydrating serum with 3% hyaluronic acid. Suitable for all skin types.",
       "price": 29.99,
       "url": "https://www.typology.com/en/eu/face-serum/49/hydrating-serum-3-hyaluronic-acid.html",
-      "skintype": "All",
+      "skintype": "Dry",
       "skinconcern": "Hydration"
     },
     {
@@ -17,7 +17,7 @@
       "price": 39.99,
       "url": "https://beautyofjoseon.com/products/glow-serum",
       "skintype": "Dry",
-      "skinconcern": "Brightening"
+      "skinconcern": "Acne"
     },
     {
       "skinproductId": 3,
@@ -36,7 +36,7 @@
       "description": "A lightweight, oil-free sunscreen that hydrates and protects all skin tones.",
       "price": 35.00,
       "url": "https://www.fentybeauty.com/hydra-vizor-invisible-moisturizer-spf-30-sunscreen/FB20002.html",
-      "skintype": "All",
+      "skintype": "Dry",
       "skinconcern": "Sun protection"
     },
     {
@@ -67,7 +67,7 @@
       "price": 37.99,
       "url": "https://beautyofjoseon.com/products/revitalize-sleeping-mask",
       "skintype": "Dry",
-      "skinconcern": "Nourishment"
+      "skinconcern": "Hydration"
     },
     {
       "skinproductId": 8,
@@ -76,7 +76,7 @@
       "description": "An anti-aging eye cream that hydrates and diminishes signs of aging around the eyes.",
       "price": 34.00,
       "url": "https://www.paulaschoice.com/resist-anti-aging-eye-cream/781.html",
-      "skintype": "Mature",
+      "skintype": "Combination",
       "skinconcern": "Anti-aging"
     },
     {
@@ -86,7 +86,7 @@
       "description": "Potent vitamin C serum that visibly firms and brightens the skin.",
       "price": 80.00,
       "url": "https://www.drunkelephant.com/products/c-firma-day-serum",
-      "skintype": "All",
+      "skintype": "Combination",
       "skinconcern": "Brightening"
     },
     {
@@ -96,8 +96,8 @@
       "description": "An overnight gel-cream that hydrates, soothes, and replenishes the skin.",
       "price": 40.00,
       "url": "https://www.fentybeauty.com/instant-reset-overnight-recovery-gel-cream/FB20005.html",
-      "skintype": "Sensitive",
-      "skinconcern": "Soothing"
+      "skintype": "Oily",
+      "skinconcern": "Hydration"
     }
   ]
   

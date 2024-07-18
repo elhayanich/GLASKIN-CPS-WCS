@@ -2,17 +2,17 @@
     {
       "hairproductId": 1,
       "name": "Olaplex No.3 Hair Perfector",
-      "image": "placeholder_image_url",
+      "image": "https://www.beautycoiffure.com/179729-medium_default/perfecteur-de-cheveux-n3-hair-perfector-olaplex-100ml.jpg",
       "description": "A treatment that strengthens hair and reduces breakage, suitable for all hair types.",
       "price": 28.00,
       "url": "https://olaplex.com/products/olaplex-no-3-hair-perfector",
-      "hairtype": "All",
-      "hairconcern": "Hair strength"
+      "hairtype": "Damaged",
+      "hairconcern": "Moisture"
     },
     {
       "hairproductId": 2,
       "name": "Kérastase Resistance Bain Force Architecte Shampoo",
-      "image": "placeholder_image_url",
+      "image": "https://m.media-amazon.com/images/I/61zszMwdasL._AC_UF1000,1000_QL80_.jpg",
       "description": "Reconstructing shampoo for brittle, damaged hair. Strengthens and revitalizes hair fibers.",
       "price": 35.00,
       "url": "https://www.kerastase-usa.com/collections/resistance/bain-force-architecte-shampoo.html",
@@ -22,7 +22,7 @@
     {
       "hairproductId": 3,
       "name": "Shiseido Fino Premium Touch Hair Mask",
-      "image": "placeholder_image_url",
+      "image": "https://mythaibeauty.com/wp-content/uploads/2024/06/tempImageNuFsGF.jpg",
       "description": "Intensive hair mask that deeply moisturizes and repairs damaged hair.",
       "price": 16.00,
       "url": "https://www.shiseido.com/fino-premium-touch-hair-mask-0729238132555.html",
@@ -32,7 +32,7 @@
     {
       "hairproductId": 4,
       "name": "Olaplex No.4 Bond Maintenance Shampoo",
-      "image": "placeholder_image_url",
+      "image": "https://cdn11.bigcommerce.com/s-63354/images/stencil/1280x1280/products/3155/10781/OLAPLEX_No._3_Hair_Perfector_100ml_5_1__67645.1647005167.jpg?c=2&imbypass=on",
       "description": "A restorative shampoo that repairs and protects hair bonds for healthy, shiny hair.",
       "price": 28.00,
       "url": "https://olaplex.com/products/olaplex-no-4-bond-maintenance-shampoo",
@@ -42,62 +42,62 @@
     {
       "hairproductId": 5,
       "name": "Kérastase Discipline Fluidissime Anti-Frizz Spray",
-      "image": "placeholder_image_url",
+      "image": "https://jesenslebonheur.fr/deals1/164061-large_default/kerastase-gamme-discipline-fluidissime-soin-spray-integral-anti-frizz-sans-rincage-thermo-protection-brillance-so-laques-et-spra.jpg",
       "description": "Anti-frizz spray that provides shine and control while protecting against humidity.",
       "price": 45.00,
       "url": "https://www.kerastase-usa.com/collections/discipline/fluidissime-anti-frizz-spray.html",
       "hairtype": "Frizzy",
-      "hairconcern": "Frizz control"
+      "hairconcern": "Frizz-control"
     },
     {
       "hairproductId": 6,
       "name": "Shiseido Tsubaki Premium Repair Hair Mask",
-      "image": "placeholder_image_url",
+      "image": "https://klubeauty.com/cdn/shop/files/Slide5_75a657a4-0529-4eaf-99df-1fb0f959f434_jpg.webp?v=1713256651&width=1445",
       "description": "Repairing hair mask enriched with tsubaki oil to nourish and strengthen hair.",
       "price": 20.00,
       "url": "https://www.shiseido.com/tsubaki-premium-repair-hair-mask-0729238147467.html",
-      "hairtype": "Brittle",
-      "hairconcern": "Strength"
+      "hairtype": "Dry",
+      "hairconcern": "Repair"
     },
     {
       "hairproductId": 7,
       "name": "Olaplex No.5 Bond Maintenance Conditioner",
-      "image": "placeholder_image_url",
+      "image": "https://www.coiffidis.fr/17389-large_default/olaplex-n5-bond-maintenance-conditioner-250ml.jpg",
       "description": "A conditioner that hydrates and repairs hair, leaving it strong, smooth, and shiny.",
       "price": 28.00,
       "url": "https://olaplex.com/products/olaplex-no-5-bond-maintenance-conditioner",
-      "hairtype": "Fine",
-      "hairconcern": "Volume"
+      "hairtype": "Color-treated",
+      "hairconcern": "Color protection"
     },
     {
       "hairproductId": 8,
       "name": "Kérastase Nutritive Nectar Thermique Heat Protector",
-      "image": "placeholder_image_url",
+      "image": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/b20ca9a2-c1a7-41c9-90c3-c843ea0bb315.__CR0,0,600,450_PT0_SX600_V1___.jpg",
       "description": "Heat-activated leave-in treatment for dry hair. Nourishes, protects, and adds shine.",
       "price": 39.00,
       "url": "https://www.kerastase-usa.com/collections/nutritive/nutritive-nectar-thermique-heat-protector.html",
-      "hairtype": "Thick",
-      "hairconcern": "Heat protection"
+      "hairtype": "Dry",
+      "hairconcern": "Moisture"
     },
     {
       "hairproductId": 9,
       "name": "Shiseido Super Mild Hair Treatment",
-      "image": "placeholder_image_url",
+      "image": "https://i.ebayimg.com/images/g/vqMAAOSwAPlXh0NM/s-l1200.jpg",
       "description": "Gentle hair treatment that conditions and detangles, suitable for sensitive scalps.",
       "price": 12.00,
       "url": "https://www.shiseido.com/super-mild-hair-treatment-0729238110402.html",
-      "hairtype": "Sensitive",
-      "hairconcern": "Gentle care"
+      "hairtype": "Damaged",
+      "hairconcern": "Frizz-control"
     },
     {
       "hairproductId": 10,
       "name": "Fino Premium Touch Hair Treatment Essence",
-      "image": "placeholder_image_url",
+      "image": "https://kiokii.com/cdn/shop/products/shiseido-fino-premium-touch-essence-hair-oilshiseido-234276_grande.jpg?v=1705600083",
       "description": "Leave-in hair treatment essence that moisturizes and smoothens hair for a silky finish.",
       "price": 18.00,
       "url": "https://www.amazon.com/Fino-Premium-Touch-Essence-230g/dp/B01N7IZPO1",
-      "hairtype": "Thin",
-      "hairconcern": "Thickness"
+      "hairtype": "Color-treated",
+      "hairconcern": "Repair"
     }
   ]
   

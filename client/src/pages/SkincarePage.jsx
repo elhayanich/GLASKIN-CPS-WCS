@@ -6,7 +6,7 @@ export default function Skincare() {
   const [skincareProducts, setSkincareProducts] = useState([]);
   const [filteredSkintypes, setFilteredSkintypes] = useState([]);
   const [filteredSkinconcerns, setFilteredSkinconcerns] = useState([]);
-  const [selectedSkintype, setSelectedSkintype] = useState('All');
+  const [selectedSkintype, setSelectedSkintype] = useState('');
   const [selectedSkinconcern, setSelectedSkinconcern] = useState('');
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function Skincare() {
         setSkincareProducts(data);
 
         
-        const skintypes = [...new Set(data.map(product => product.skintype))].filter(skintype => skintype).map((skintype, index) => ({ id: index, label: skintype }));
+        const skintypes = [...new Set(data.map(product => product.skintype))].map((skintype, index) => ({ id: index, label: skintype }));
         const skinconcerns = [...new Set(data.map(product => product.skinconcern))].map((skinconcern, index) => ({ id: index, label: skinconcern }));
 
         setFilteredSkintypes(skintypes);
@@ -43,7 +43,7 @@ export default function Skincare() {
 
   const filterProducts = (product) => {
     if (
-      (selectedSkintype === 'All' || product.skintype === selectedSkintype) &&
+      (selectedSkintype === '' || product.skintype === selectedSkintype) &&
       (selectedSkinconcern === '' || product.skinconcern === selectedSkinconcern)
     ) {
       return true;
@@ -67,6 +67,7 @@ export default function Skincare() {
               onChange={handleSkintypeChange}
               className="mt-1 block w-full px-20 py-2 border border-gray-300 bg-Softy bg-opacity-50 backdrop-blur-md shadow-lg rounded-lg focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm hover:bg-Bluey"
             >
+               <option value="">All</option>
               {filteredSkintypes.map((skintype) => (
                 <option key={skintype.id} value={skintype.label}>{skintype.label}</option>
               ))}
