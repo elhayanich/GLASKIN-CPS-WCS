@@ -6,17 +6,17 @@ class FavoriteRepository extends AbstractRepository {
   }
 
   async create(favorite) {
-    const { userId, productId, tipsId } = favorite;
+    const { userId, skinproductId, hairproductId, tipsId } = favorite;
     const [result] = await this.database.query(
-      `INSERT INTO ${this.table} (userId, productId, tipsId) VALUES (?, ?, ?)`,
-      [userId, productId, tipsId]
+      `INSERT INTO ${this.table} (userId, skinproductId, hairproductId, tipsId) VALUES (?, ?, ?, ?)`,
+      [userId, skinproductId, hairproductId, tipsId]
     );
     return result.insertId;
   }
 
   async readOneById(id) {
     const [rows] = await this.database.query(
-      `SELECT favoriteId, userId, productId, tipsId FROM ${this.table} WHERE favoriteId = ?`,
+      `SELECT favoriteId, userId, skinproductId, hairproductId, tipsId FROM ${this.table} WHERE favoriteId = ?`,
       [id]
     );
     return rows[0];
@@ -24,16 +24,16 @@ class FavoriteRepository extends AbstractRepository {
 
   async readAll() {
     const [rows] = await this.database.query(
-      `SELECT favoriteId, userId, productId, tipsId FROM ${this.table}`
+      `SELECT favoriteId, userId, skinproductId, hairproductId, tipsId FROM ${this.table}`
     );
     return rows;
   }
 
   async update(id, favorite) {
-    const { userId, productId, tipsId } = favorite;
+    const { userId, skinproductId, hairproductId, tipsId } = favorite;
     const [result] = await this.database.query(
-      `UPDATE ${this.table} SET userId = ?, productId = ?, tipsId = ? WHERE favoriteId = ?`,
-      [userId, productId, tipsId, id]
+      `UPDATE ${this.table} SET userId = ?, skinproductId = ?, hairproductId = ?, tipsId = ? WHERE favoriteId = ?`,
+      [userId, skinproductId, hairproductId, tipsId, id]
     );
     return result.affectedRows > 0;
   }
@@ -48,3 +48,4 @@ class FavoriteRepository extends AbstractRepository {
 }
 
 module.exports = FavoriteRepository;
+
