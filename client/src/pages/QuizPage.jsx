@@ -24,9 +24,7 @@ export default function Quiz() {
                 { id: 'Dry', label: 'Dry' },
                 { id: 'Oily', label: 'Oily' },
                 { id: 'Combination', label: 'Combination' },
-                { id: 'Sensitive', label: 'Sensitive' },
                 { id: 'Normal', label: 'Normal' },
-                { id: 'Mature', label: 'Mature' }
             ],
         },
     ];
