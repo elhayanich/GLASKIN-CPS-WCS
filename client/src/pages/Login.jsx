@@ -34,7 +34,7 @@ export default function Login() {
       );
       setCurrentUser(response.data.user);
       toast.success("You are now logged in!");
-      navigate("/quiz");
+      navigate("/skincare");
     } catch (e) {
       console.error(e.response.data);
       toast.error("Login failed, please try again.");

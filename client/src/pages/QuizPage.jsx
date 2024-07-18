@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from "../components/Navbar";
-import quizImage from "../assets/images/quiz.jpg"; 
+import quizImage from "../assets/images/quiz.jpg";
+import favoriteIcon from "../assets/images/favorite.png"; 
 
 export default function Quiz() {
     const [products, setProducts] = useState([]);
@@ -48,7 +49,7 @@ export default function Quiz() {
             <Navbar />
             <div className="flex justify-center items-center">
                 <div className="relative bg-Softy p-10 mt-8 rounded-lg shadow-md" style={{ backgroundImage: `url(${quizImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-                    <div className="absolute inset-0 bg-Creamy opacity-50 rounded-lg">.</div> {/* Opacity overlay */}
+                    <div className="absolute inset-0 bg-Creamy opacity-50 rounded-lg">.</div> 
                     <div className="relative z-10">
                         <h2 className="text-3xl font-bold mb-4 text-Dark">Discover the product made for your skin</h2>
                         {questions.map((question) => (
@@ -94,17 +95,13 @@ export default function Quiz() {
                                 <p className="text-gray-600">{product.description}</p>
                                 <p className="mt-2 text-gray-700">Price: ${product.price}</p>
                                 <div className="mt-4 flex justify-end">
-                                    <Link to={`/skincare/${product.skinproductId}`} className="bg-Dark text-Softy px-4 py-2 rounded-lg">
-                                        See Details
+                                    <Link to="/register" className="bg-Dark text-Softy px-4 py-2 rounded-lg flex items-center">
+                                        Add to favorites
+                                        <img src={favoriteIcon} alt="Favorite Icon" className="w-14" /> 
                                     </Link>
                                 </div>
                             </div>
                         ))}
-                    </div>
-                    <div className="flex justify-center mb-2 mt-4">
-                        <Link to="/skincare" className="bg-Dark text-Softy px-4 py-2 rounded-lg">
-                            Discover all our products
-                        </Link>
                     </div>
                 </div>
             )}
