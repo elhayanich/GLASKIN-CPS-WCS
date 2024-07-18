@@ -139,7 +139,7 @@ function Register() {
                 type="submit"
                 className="btn bg-Dark text-Softy w-full p-2 mt-3 hover:bg-gray-600"
               >
-                Inscription
+                Register
               </button>
             </form>
             <p className="text-sm mt-2">
