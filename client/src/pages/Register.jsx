@@ -39,6 +39,7 @@ function Register() {
       <NavBar />
       <div className="container mx-auto px-4 py-8 md:py-16 flex items-center justify-center relative z-10">
         <div className="rounded-xl w-full max-w-md p-6 bg-Softy bg-opacity-80 shadow-lg">
+          <h2 className=" text-xl font-main text-Dark mb-4 pb-4"   > ⭐ Join Glaskin community to save your favorite products and more ⭐ </h2>
           <div className="flex flex-col gap-3">
             <form className="flex flex-col gap-4" onSubmit={handleSubmit(onSubmit)}>
               <div>
