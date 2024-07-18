@@ -22,6 +22,7 @@ CREATE TABLE hairproduct (
 
 CREATE TABLE tips (
     tipsId INT PRIMARY KEY,
+    image TEXT,
     title VARCHAR(255) NOT NULL,
     content TEXT
 );

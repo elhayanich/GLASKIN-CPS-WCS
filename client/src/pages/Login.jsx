@@ -5,8 +5,7 @@ import { useForm } from "react-hook-form";
 import { useNavigate, useOutletContext, Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import NavBar from "../components/Navbar";
-import logo from "../assets/images/logo.png";
-
+import bgImage from "../assets/bg2.jpg";
 
 export default function Login() {
   const { currentUser, setCurrentUser } = useOutletContext();
@@ -43,18 +42,19 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-Creamy">
+    <div className="relative min-h-screen bg-Creamy">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${bgImage})`,
+          opacity: 0.5, 
+        }}
+      >.</div>
       <NavBar />
-      <div className="container mx-auto px-4 py-8 md:py-16 flex items-center justify-center">
-        <div className="rounded-xl w-full max-w-md p-6">
+      <div className="container mx-auto px-4 py-8 md:py-16 flex items-center justify-center relative z-10">
+        <div className="rounded-xl w-full max-w-md p-6 bg-Softy bg-opacity-80 shadow-lg">
           <div className="flex flex-col gap-3">
-            <div className="flex justify-center mb-4">
-              <img
-                src={logo}
-                alt="Logo"
-                className="w-20 h-20 rounded-full border-solid border-white"
-              />
-            </div>
+            
             <form className="flex flex-col gap-4" onSubmit={handleSubmit(onSubmit)}>
               <div>
                 <label htmlFor="email" className="text-sm font-bold">
@@ -80,7 +80,7 @@ export default function Login() {
               </div>
               <div>
                 <label htmlFor="password" className="text-sm font-bold">
-                  Mot de passe :
+                  Password :
                 </label>
                 <input
                   type="password"
@@ -105,14 +105,14 @@ export default function Login() {
                   type="submit"
                   className="btn bg-Dark text-Softy w-full p-2 mt-3 hover:bg-gray-600"
                 >
-                  Connexion
+                  Log in
                 </button>
               </div>
             </form>
             <p className="text-sm mt-2">
-              Pas encore inscrit ?
+              You don't have an account yet ?
               <Link to="/register" className="text-blue-400 underline hover:text-blue-300">
-                Inscription
+                Register
               </Link>
             </p>
           </div>

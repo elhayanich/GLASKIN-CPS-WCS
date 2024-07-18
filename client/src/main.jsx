@@ -12,6 +12,7 @@ import SkincarePage from "./pages/SkincarePage";
 import HaircarePage from "./pages/HaircarePage";
 import SkincareDetailPage from "./pages/skincareDetailPage";
 import QuizPage from "./pages/QuizPage";
+import TipsPage from "./pages/TipsPage";
 
 
 const router = createBrowserRouter([
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
+      },
+      {
+        path: "/tips",
+        element: <TipsPage/>,
       },
       {
         path: "/register",

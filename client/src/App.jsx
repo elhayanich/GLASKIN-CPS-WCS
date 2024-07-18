@@ -26,8 +26,9 @@ function App() {
         theme="colored"
         transition={Bounce}
       />
-      <p>Welcome : {currentUser?.username}</p>
+     
     <Outlet context={{ currentUser, setCurrentUser }}/>
+    <p>Welcome : {currentUser?.username}</p>
     </>
       
   );

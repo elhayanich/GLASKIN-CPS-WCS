@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from "../components/Navbar";
+import quizImage from "../assets/images/quiz.jpg"; 
 
 export default function Quiz() {
     const [products, setProducts] = useState([]);
@@ -46,33 +47,36 @@ export default function Quiz() {
         <div className='min-h-screen bg-Creamy'>
             <Navbar />
             <div className="flex justify-center items-center">
-                <div className="bg-Softy p-10 mt-8 rounded-lg shadow-md">
-                    <h2 className="text-3xl font-bold mb-4">Discover the product made for your skin</h2>
-                    {questions.map((question) => (
-                        <div key={question.id} className="mb-4">
-                            <p className="text-lg font-semibold mb-2">{question.question}</p>
-                            <div className="flex flex-wrap gap-2">
-                                {question.options.map((option) => (
-                                    <button
-                                        type='button'
-                                        key={option.id}
-                                        onClick={() => handleAnswerSelect(option.id)}
-                                        className={`px-4 py-2 rounded-md shadow-md ${answer === option.id ? 'bg-Dark text-white' : 'bg-Bluey text-Dark'} hover:bg-Pinky`}
-                                    >
-                                        {option.label}
-                                    </button>
-                                ))}
+                <div className="relative bg-Softy p-10 mt-8 rounded-lg shadow-md" style={{ backgroundImage: `url(${quizImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                    <div className="absolute inset-0 bg-Creamy opacity-50 rounded-lg">.</div> {/* Opacity overlay */}
+                    <div className="relative z-10">
+                        <h2 className="text-3xl font-bold mb-4 text-Dark">Discover the product made for your skin</h2>
+                        {questions.map((question) => (
+                            <div key={question.id} className="mb-4">
+                                <p className="text-lg font-semibold mb-2 text-Dark">{question.question}</p>
+                                <div className="flex flex-wrap gap-2">
+                                    {question.options.map((option) => (
+                                        <button
+                                            type='button'
+                                            key={option.id}
+                                            onClick={() => handleAnswerSelect(option.id)}
+                                            className={`px-4 py-2 rounded-md shadow-md ${answer === option.id ? 'bg-Dark text-white' : 'bg-Bluey text-Dark'} hover:bg-Pinky`}
+                                        >
+                                            {option.label}
+                                        </button>
+                                    ))}
+                                </div>
                             </div>
+                        ))}
+                        <div className="mt-4">
+                            <button
+                                type='button'
+                                onClick={handleQuizSubmit}
+                                className="px-4 py-2 rounded-md shadow-md bg-Pinky text-white hover:bg-Dark"
+                            >
+                                Submit
+                            </button>
                         </div>
-                    ))}
-                    <div className="mt-4">
-                        <button
-                            type='button'
-                            onClick={handleQuizSubmit}
-                            className="px-4 py-2 rounded-md shadow-md bg-Dark text-white hover:bg-Pinky"
-                        >
-                            Submit
-                        </button>
                     </div>
                 </div>
             </div>

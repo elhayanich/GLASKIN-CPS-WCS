@@ -1,10 +1,10 @@
-
 /* eslint-disable react/jsx-props-no-spreading */
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import NavBar from "../components/Navbar";
+import bgImage from "../assets/bg2.jpg"; // Import your background image
 
 function Register() {
   const {
@@ -28,10 +28,17 @@ function Register() {
   };
 
   return (
-    <div className="min-h-screen bg-Creamy">
+    <div className="relative min-h-screen bg-Creamy">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${bgImage})`,
+          opacity: 0.5, 
+        }}
+      >.</div>
       <NavBar />
-      <div className="container mx-auto px-4 py-8 md:py-16 flex items-center justify-center">
-        <div className="rounded-xl w-full max-w-md p-6">
+      <div className="container mx-auto px-4 py-8 md:py-16 flex items-center justify-center relative z-10">
+        <div className="rounded-xl w-full max-w-md p-6 bg-Softy bg-opacity-80 shadow-lg">
           <div className="flex flex-col gap-3">
             <form className="flex flex-col gap-4" onSubmit={handleSubmit(onSubmit)}>
               <div>
@@ -115,7 +122,7 @@ function Register() {
                   type="password"
                   id="confirmpassword"
                   name="confirmpassword"
-                  placeholder="Type yout password again to verify"
+                  placeholder="Type your password again to verify"
                   {...register("confirmpassword", {
                     required: "La confirmation du mot de passe est requise!",
                     validate: (value) =>
@@ -152,3 +159,4 @@ function Register() {
 }
 
 export default Register;
+
