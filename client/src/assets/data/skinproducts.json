@@ -1,0 +1,103 @@
+[
+    {
+      "skinproductId": 1,
+      "name": "Typology 3% Hyaluronic Acid Serum",
+      "image": "https://media.typology.com/storyblok/1490x1570/5a2818a3af/lab-1001_image-full_web1.jpg?twic=v1/quality=70/contain=820x820",
+      "description": "Intensely hydrating serum with 3% hyaluronic acid. Suitable for all skin types.",
+      "price": 29.99,
+      "url": "https://www.typology.com/en/eu/face-serum/49/hydrating-serum-3-hyaluronic-acid.html",
+      "skintype": "Dry",
+      "skinconcern": "Hydration"
+    },
+    {
+      "skinproductId": 2,
+      "name": "Beauty of Joseon Glow Serum",
+      "image": "https://www.abdbeauty.com/media/produit/image/6anHaXsFcT3KTxqlQV4uA0ptAJbsj1zKQH9a4iEg.webp",
+      "description": "Brightening and anti-aging serum infused with traditional Korean herbs.",
+      "price": 39.99,
+      "url": "https://beautyofjoseon.com/products/glow-serum",
+      "skintype": "Dry",
+      "skinconcern": "Acne"
+    },
+    {
+      "skinproductId": 3,
+      "name": "Paula's Choice Skin Perfecting 2% BHA Liquid Exfoliant",
+      "image": "https://co.nice-cdn.com/upload/image/product/large/default/paulas-choice-skin-perfecting-2-bha-liquid-peeling-158803-fr.jpg",
+      "description": "A gentle leave-on exfoliant that reduces blackheads, breakouts, and redness.",
+      "price": 29.00,
+      "url": "https://www.paulaschoice.com/skin-perfecting-2pct-bha-liquid-exfoliant/201.html",
+      "skintype": "Combination",
+      "skinconcern": "Acne"
+    },
+    {
+      "skinproductId": 4,
+      "name": "Fenty Skin Hydra Vizor Invisible Moisturizer SPF 30",
+      "image": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FS22_REFRESH_HYDRAVIZOR_PDP_MINERAL_FRAGRANCE-FREE_FENTYVERSE_600x.jpg?v=1692710438",
+      "description": "A lightweight, oil-free sunscreen that hydrates and protects all skin tones.",
+      "price": 35.00,
+      "url": "https://www.fentybeauty.com/hydra-vizor-invisible-moisturizer-spf-30-sunscreen/FB20002.html",
+      "skintype": "Dry",
+      "skinconcern": "Sun protection"
+    },
+    {
+      "skinproductId": 5,
+      "name": "Drunk Elephant T.L.C. Framboos Glycolic Night Serum",
+      "image": "https://www.drunkelephant.ca/dw/image/v2/BBSK_PRD/on/demandware.static/-/Sites-itemmaster_drunkelephant/default/dwaaf65075/products/images/Skincare/Serum/999DE00000104/TLCFramboos_StylizeAddtoCart_Image3.png?sw=299&sh=299&sm=fit",
+      "description": "A powerful AHA/BHA night serum that resurfaces skin for smoother, more radiant complexion.",
+      "price": 90.00,
+      "url": "https://www.drunkelephant.com/products/tlc-framboos-glycolic-night-serum",
+      "skintype": "Normal",
+      "skinconcern": "Exfoliation"
+    },
+    {
+      "skinproductId": 6,
+      "name": "Typology Purifying Serum 0.2% Salicylic Acid",
+      "image": "https://media.typology.com/storyblok/1280x1280/1678d89dc8/05_dos_salicylique.jpg?twic=v1/quality=70/cover=820x1027",
+      "description": "Purifying serum with 0.2% salicylic acid. Helps to unclog pores and reduce imperfections.",
+      "price": 27.99,
+      "url": "https://www.typology.com/en/eu/face-serum/54/purifying-serum-02-salicylic-acid.html",
+      "skintype": "Oily",
+      "skinconcern": "Acne"
+    },
+    {
+      "skinproductId": 7,
+      "name": "Beauty of Joseon Revitalize Sleeping Mask",
+      "image": "https://sokoskins.shop/cdn/shop/products/beauty-of-joseon-revitalize-sleeping-mask-thumbnail-01_768x.jpg?v=1549563354",
+      "description": "Revitalizing sleeping mask that hydrates and nourishes skin overnight.",
+      "price": 37.99,
+      "url": "https://beautyofjoseon.com/products/revitalize-sleeping-mask",
+      "skintype": "Dry",
+      "skinconcern": "Hydration"
+    },
+    {
+      "skinproductId": 8,
+      "name": "Paula's Choice RESIST Anti-Aging Eye Cream",
+      "image": "https://media.paulaschoice-eu.com/image/upload/f_auto,q_auto,dpr_auto/c_fit,w_460,h_700/products/images/7900-lifestyle?_i=AG",
+      "description": "An anti-aging eye cream that hydrates and diminishes signs of aging around the eyes.",
+      "price": 34.00,
+      "url": "https://www.paulaschoice.com/resist-anti-aging-eye-cream/781.html",
+      "skintype": "Combination",
+      "skinconcern": "Anti-aging"
+    },
+    {
+      "skinproductId": 9,
+      "name": "Drunk Elephant C-Firma Day Serum",
+      "image": "https://www.drunkelephant.ca/dw/image/v2/BBSK_PRD/on/demandware.static/-/Sites-itemmaster_drunkelephant/default/dw240def67/products/images/Skincare/Serum/812343034358-C-Firma/C-Firma-PDP_Carousel/C-Firma_2.jpg?sw=540&sh=540&sm=fit",
+      "description": "Potent vitamin C serum that visibly firms and brightens the skin.",
+      "price": 80.00,
+      "url": "https://www.drunkelephant.com/products/c-firma-day-serum",
+      "skintype": "Combination",
+      "skinconcern": "Brightening"
+    },
+    {
+      "skinproductId": 10,
+      "name": "Fenty Skin Instant Reset Overnight Recovery Gel-Cream",
+      "image": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FS_FA20_T2PRODUCT_INSTANTRESETOVERNIGHTGELCREME_SHOT08_1200x1500_136063f9-e296-4471-b8c0-d685d10cb6ac_600x.jpg?v=1715102309",
+      "description": "An overnight gel-cream that hydrates, soothes, and replenishes the skin.",
+      "price": 40.00,
+      "url": "https://www.fentybeauty.com/instant-reset-overnight-recovery-gel-cream/FB20005.html",
+      "skintype": "Oily",
+      "skinconcern": "Hydration"
+    }
+  ]
+  
