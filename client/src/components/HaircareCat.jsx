@@ -41,19 +41,19 @@
 
 import { useState } from 'react';
 import hair from "../assets/images/hair.png";
-import hairproducts from "../assets/data/hairproducts.json"; // Importing JSON data
+import hairproducts from "../assets/data/hairproducts.json"; 
 
 export default function HaircareCat() {
-  const [products] = useState(hairproducts); // Directly setting the products
+  const [products] = useState(hairproducts);
 
   return (
     <div className="category-card">
       <h2 className="pr-8 text-xl bg-Dark text-Softy px-2 py-2 rounded-lg mb-2 font-title font-bold flex items-center justify-center">
-        <img src={hair} alt="Haircare" className="w-12 h-12 mr-6" /> 
+        <img src={hair} alt="Haircare" className="w-12 h-12 mr-6" />
         <span className="inline-block">Haircare</span>
       </h2>
       <div className="flex flex-col gap-8">
-        {products.map((product) => (
+        {products.slice(0, 4).map((product) => (
           <div key={product.hairproductId} className="bg-Softy bg-opacity-40 backdrop-blur-md rounded-lg shadow-md p-4 flex items-center">
             <img src={product.image} alt={product.name} className="rounded-full w-16 h-16 mr-4" />
             <h3 className="text-Dark">{product.name}</h3>
@@ -63,3 +63,4 @@ export default function HaircareCat() {
     </div>
   );
 }
+

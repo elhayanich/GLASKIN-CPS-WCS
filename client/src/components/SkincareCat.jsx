@@ -42,10 +42,10 @@
 
 import { useState } from 'react';
 import skin from "../assets/images/skin.png";
-import skinproducts from "../assets/data/skinproducts.json"; // Importing JSON data
+import skinproducts from "../assets/data/skinproducts.json"; 
 
 export default function SkincareCat() {
-  const [products] = useState(skinproducts); // Directly setting the products
+  const [products] = useState(skinproducts);
 
   return (
     <div className="category-card">
@@ -54,7 +54,7 @@ export default function SkincareCat() {
         <span className="inline-block">Skincare</span>
       </h2>
       <div className="flex flex-col gap-8">
-        {products.map((product) => (
+        {products.slice(0, 4).map((product) => (
           <div key={product.skinproductId} className="bg-Softy bg-opacity-40 backdrop-blur-md rounded-lg shadow-md p-4 flex items-center">
             <img src={product.image} alt={product.name} className="rounded-full w-16 h-16 mr-4" />
             <h3 className="text-Dark">{product.name}</h3>
@@ -64,4 +64,5 @@ export default function SkincareCat() {
     </div>
   );
 }
+
 
